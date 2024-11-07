@@ -43,7 +43,7 @@ Feel free to check out the session's detailed steps and resources in the respect
 
 
 
-## Here’s What We’ll Be Doing:
+### Here’s What We’ll Be Doing:
 Below is a list of the tasks and topics we’ll be covering in this series. This list is not fixed—it will evolve over time as we dive deeper into the world of DevOps and tackle new challenges together. Stay tuned for updates as we progress!
 
 <details>
@@ -191,7 +191,7 @@ My commitment to continuous learning and adaptation ensures that I stay at the f
 </table>
 
 
-# 🔗 Links
+## 🔗 Links
 [![Site](https://img.shields.io/badge/Dockerme.ir-0A66C2?style=for-the-badge&logo=docker&logoColor=white)](https://dockerme.ir/)
 [![YouTube](https://img.shields.io/badge/youtube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtube.com/@dockerme)
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ahmad-rafiee/)
