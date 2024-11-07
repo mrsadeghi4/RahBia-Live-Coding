@@ -1,18 +1,48 @@
+# RahBia DevOps Live Coding Series
+
+Welcome to the **RahBia DevOps Live Coding Series**! In this project, we’ll explore the entire DevOps lifecycle—from configuring servers to setting up production-ready services.
+
+### About This Project
+
+This live coding series is designed to guide you through each stage of a DevOps project in a hands-on way. Starting with foundational skills, we’ll gradually move toward complex and advanced setups, such as containerization, orchestration, and cloud infrastructure.
+
+Each session builds upon the previous one, allowing you to develop a deep understanding of each component in a DevOps environment. By the end, you’ll be equipped with the skills to handle a full production deployment.
+
+### What You'll Learn
+In this series, you’ll gain hands-on experience in a wide range of essential DevOps skills:
+
+  - **Linux:** Core commands, server setup, and administration.
+  - **Networking:** Configuring networks, firewalls, and secure access.
+  - **Docker:** Container building, deployment, and management.
+  - **Ansible:** Infrastructure automation and configuration management.
+  - **Kubernetes:** Container orchestration, workload management, and scaling.
+  - **Monitoring, Logging, and Tracing:** Observability practices for efficient troubleshooting and insights.
+  - **CI/CD Pipelines:** Building continuous integration and deployment flows.
+  - **GitOps:** Git-based workflows for managing infrastructure and applications.
+  - **Infrastructure as Code (IaC):** Automating infrastructure using code.
+  - **OpenStack:** Creating and managing scalable cloud resources.
+  - **Ceph:** Distributed storage solutions for high availability and resilience.
+
+By the end of this series, you’ll have a complete toolkit to handle production-ready deployments and optimize DevOps workflows.
+
+### Let’s Work Together!
+
+In this series, we’ll progress side by side, getting hands-on with each topic and learning through experience. Together, we’ll **encounter challenges**, **troubleshoot errors**, and find solutions as we move forward. This journey is all about exploring and overcoming DevOps challenges together!
+
+## Here’s What We’ll Be Doing:
+Below is a list of the tasks and topics we’ll be covering in this series. This list is not fixed—it will evolve over time as we dive deeper into the world of DevOps and tackle new challenges together. Stay tuned for updates as we progress!
 
 
-
-
-## RahBia Live Coding Steps:
   - [x] Explain the live coding video path
     - [x] Project introduction and code review (Voting app)
     - [x] Infrastructure overview (VMware, Debian OS)
     - [x] Automation tool introduction (Ansible)
   - [x] Create the project on GitHub and set up storage for static files on Google Drive
-  - [ ] Install a Linux OS and focus on the following:
-    - [ ] Disk partitioning and implementation of required standards
-    - [ ] Review the partitioning
-    - [ ] Update and install basic required tools
-    - [ ] Perform system hardening using the Lynis tool
+  - [x] Install a Linux OS and focus on the following:
+    - [x] Disk partitioning and implementation of required standards
+    - [x] Review the partitioning
+    - [x] Update and install basic required tools
+    - [x] Perform system hardening using the Lynis tool
   - [ ] Use an Ansible project to modify and harden Linux servers to achieve a security score above 80
   - [ ] Use an Ansible project to modify, install, and configure Docker on servers
   - [ ] Create a VM template on VMware and write an Ansible playbook to automate VM creation
@@ -117,3 +147,36 @@
   - [ ] Simulate incidents within the OpenStack cluster
   - [ ] Set up end-to-end testing for OpenStack with rally project
 
+
+### License
+This project is licensed under the Apache-2.0 License. See the [LICENSE](LICENSE) file for more details.
+
+### Support the Project
+If you find this project useful and it helps you in your DevOps journey, please consider giving it a ⭐️ on GitHub! Your support not only encourages the continuous improvement of this repository, but also helps others discover and benefit from it.
+
+You can also contribute by opening issues or pull requests with suggestions, improvements, or new content. Every contribution helps this project grow and reach more developers in the community!
+
+### About Me
+<table>
+  <tr>
+    <td>
+      <img src="https://avatars.githubusercontent.com/u/19145573?v=4" alt="Ahmad Rafiee" width="750" style="border-radius: 750%;">
+    </td>
+    <td>
+      <h2>Ahmad Rafiee</h2>
+      <p>With over 15 years of experience in DevOps and infrastructure, I have been dedicated to designing and implementing a wide range of solutions, from small services and stacks to large cloud clusters. Throughout my career, I have gained extensive knowledge in various technologies and methodologies, enabling me to tackle complex challenges effectively.
+
+I have also been passionate about sharing my expertise through teaching DevOps, empowering the next generation of professionals in the field. Additionally, I have served as a consultant on numerous projects, collaborating with diverse teams to enhance their DevOps practices and infrastructure.
+
+My commitment to continuous learning and adaptation ensures that I stay at the forefront of the rapidly evolving tech landscape, making me a valuable asset to any organization or initiative.</p>
+    </td>
+  </tr>
+</table>
+
+
+# 🔗 Links
+[![Site](https://img.shields.io/badge/Dockerme.ir-0A66C2?style=for-the-badge&logo=docker&logoColor=white)](https://dockerme.ir/)
+[![YouTube](https://img.shields.io/badge/youtube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtube.com/@dockerme)
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ahmad-rafiee/)
+[![Telegram](https://img.shields.io/badge/telegram-0A66C2?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/dockerme)
+[![Instagram](https://img.shields.io/badge/instagram-FF0000?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/dockerme)
