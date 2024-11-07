@@ -29,9 +29,25 @@ By the end of this series, you’ll have a complete toolkit to handle production
 
 In this series, we’ll progress side by side, getting hands-on with each topic and learning through experience. Together, we’ll **encounter challenges**, **troubleshoot errors**, and find solutions as we move forward. This journey is all about exploring and overcoming DevOps challenges together!
 
+### Previous Sessions
+<details>
+  <summary>RahBia Live Coding Sessions</summary>
+
+Below is a list of the sessions we've already completed in the RahBia Live Coding Series. Each session builds upon the previous one, providing you with a step-by-step guide to mastering essential DevOps skills. If you've missed any session, you can always catch up and continue from where we left off!
+
+  - **[Session 01:](2024/Session-01-06-November.md)** Getting Started, Setting the Stage - Server Setup & Initial Configuration
+
+Feel free to check out the session's detailed steps and resources in the respective session folders. We’ll keep updating this list as we progress through more advanced topics in DevOps.
+
+</details>
+
+
+
 ## Here’s What We’ll Be Doing:
 Below is a list of the tasks and topics we’ll be covering in this series. This list is not fixed—it will evolve over time as we dive deeper into the world of DevOps and tackle new challenges together. Stay tuned for updates as we progress!
 
+<details>
+  <summary>All Steps List</summary>
 
   - [x] Explain the live coding video path
     - [x] Project introduction and code review (Voting app)
@@ -147,6 +163,7 @@ Below is a list of the tasks and topics we’ll be covering in this series. This
   - [ ] Simulate incidents within the OpenStack cluster
   - [ ] Set up end-to-end testing for OpenStack with rally project
 
+</details>
 
 ### License
 This project is licensed under the Apache-2.0 License. See the [LICENSE](LICENSE) file for more details.
