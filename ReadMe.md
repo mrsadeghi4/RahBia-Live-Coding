@@ -36,11 +36,11 @@ In this series, we’ll progress side by side, getting hands-on with each topic 
 Below is a list of the sessions we've already completed in the RahBia Live Coding Series. Each session builds upon the previous one, providing you with a step-by-step guide to mastering essential DevOps skills. If you've missed any session, you can always catch up and continue from where we left off!
 
   - **[Session 01:](2024/Session-01-06-November.md)** Getting Started, Setting the Stage - Server Setup & Initial Configuration
+  - **[Session 02:](2024/Session-02-13-November.md)** Server and ssh Hardening
 
 Feel free to check out the session's detailed steps and resources in the respective session folders. We’ll keep updating this list as we progress through more advanced topics in DevOps.
 
 </details>
-
 
 
 ### Here’s What We’ll Be Doing:
@@ -59,7 +59,7 @@ Below is a list of the tasks and topics we’ll be covering in this series. This
     - [x] Review the partitioning
     - [x] Update and install basic required tools
     - [x] Perform system hardening using the Lynis tool
-  - [ ] Use an Ansible project to modify and harden Linux servers to achieve a security score above 80
+  - [x] Use an Ansible project to modify and harden Linux servers to achieve a security score above 80
   - [ ] Use an Ansible project to modify, install, and configure Docker on servers
   - [ ] Create a VM template on VMware and write an Ansible playbook to automate VM creation
   - [ ] Deploy the project as a service on a server with a database and cache, demonstrating the challenges and complexities
@@ -77,7 +77,7 @@ Below is a list of the tasks and topics we’ll be covering in this series. This
   - [ ] Write CI/CD for the project with deployment to 3 different environments with unique configurations
   - [ ] Write tests for services using SonarQube
   - [ ] Write tests for services using Trivy Scanner
-  - [ ] Perform load testing on the services with ab 
+  - [ ] Perform load testing on the services with ab
   - [ ] Perform load testing on the services with k6
   - [ ] Create backups for stateful services
   - [ ] Store backups in the server and send them to object storage
@@ -96,8 +96,8 @@ Below is a list of the tasks and topics we’ll be covering in this series. This
   - [ ] Cluster PostgreSQL without Orchestration
   - [ ] Cluster Redis without Orchestration
   - [ ] Investigation of clustering problems without orchestration
-  - [ ] Cluster PostgreSQL on Docker Swarm 
-  - [ ] Cluster Redis on Docker Swarm 
+  - [ ] Cluster PostgreSQL on Docker Swarm
+  - [ ] Cluster Redis on Docker Swarm
   - [ ] Deploy Voting app on Swarm
   - [ ] Deploy Prometheus stack on Swarm
   - [ ] Deploy Loki stack on Swarm
