@@ -35,8 +35,8 @@ In this series, we’ll progress side by side, getting hands-on with each topic 
 
 Below is a list of the sessions we've already completed in the RahBia Live Coding Series. Each session builds upon the previous one, providing you with a step-by-step guide to mastering essential DevOps skills. If you've missed any session, you can always catch up and continue from where we left off!
 
-  - **[Session 01:](2024/Session-01-06-November.md)** Getting Started, Setting the Stage - Server Setup & Initial Configuration
-  - **[Session 02:](2024/Session-02-13-November.md)** Server and ssh Hardening
+  - **[Session 01:](2024-Sessions/Session-01-06-November.md)** Getting Started, Setting the Stage - Server Setup & Initial Configuration
+  - **[Session 02:](2024-Sessions/Session-02-13-November.md)** Server and ssh Hardening
 
 Feel free to check out the session's detailed steps and resources in the respective session folders. We’ll keep updating this list as we progress through more advanced topics in DevOps.
 
