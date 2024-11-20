@@ -11,10 +11,12 @@ The ansible.cfg file defines key configuration settings for running Ansible play
 ## Playbooks:
 Playbooks are used to execute multiple roles and tasks across targeted servers.
   - `hardening.yml` This playbook is designed to strengthen security on Linux servers by implementing key hardening steps for both the operating system and SSH configurations.
+  - ‍‍`docker.yml`This is a Docker playbook that allows us to invoke the Docker role
 
 ## Roles:
 Each role in this project is modular, focused on a specific area of system security, and designed to be reusable.
   - `os_hardening` This role provides numerous security-related configurations, providing all-round base protection.
   - `ssh_hardening` This role provides secure ssh-client and ssh-server configurations. It is intended to be compliant with the [DevSec SSH Baseline](https://github.com/dev-sec/ssh-baseline).
+  - `docker_installation` With this role, you can install and configure Docker.
 
 
