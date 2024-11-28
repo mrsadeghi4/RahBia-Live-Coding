@@ -1,0 +1,15 @@
+---
+# tasks file for vms_management
+- name: Setup vms
+  import_tasks: create_vms.yml
+  tags:
+    - create_vms
+    - vms_management
+    - setup_vms
+
+- name: Change Disk partions
+  import_tasks: lvm_resize.yml
+  tags:
+    - resize_lvm
+    - vms_management
+    - setup_vms

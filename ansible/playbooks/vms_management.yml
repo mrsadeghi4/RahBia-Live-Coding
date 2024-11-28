@@ -1,0 +1,6 @@
+- name: VMs Management
+  hosts: all
+  become: true
+  gather_facts: false
+  roles:
+    - ../roles/vms_management

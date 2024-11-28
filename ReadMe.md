@@ -38,6 +38,7 @@ Below is a list of the sessions we've already completed in the RahBia Live Codin
   - **[Session 01:](2024-Sessions/Session-01-06-November.md)** Getting Started, Setting the Stage - Server Setup & Initial Configuration
   - **[Session 02:](2024-Sessions/Session-02-13-November.md)** Server and ssh Hardening
   - **[Session 03:](2024-Sessions/Session-03-20-November.md)** Install and config Docker service
+  - **[Session 04:](2024-Sessions/Session-04-27-November.md)** Automating VM Creation on vCenter with Ansible
 
 Feel free to check out the session's detailed steps and resources in the respective session folders. We’ll keep updating this list as we progress through more advanced topics in DevOps.
 
@@ -65,6 +66,7 @@ Below is a list of the tasks and topics we’ll be covering in this series. This
   - [ ] Use an Ansible project to create and change iptables
   - [ ] Use an Ansible project to create and change ssh config
   - [ ] Use an Ansible project to create and change password
+  - [ ] Mitogen for Ansible
   - [ ] Create a VM template on VMware and write an Ansible playbook to automate VM creation
   - [ ] Deploy the project as a service on a server with a database and cache, demonstrating the challenges and complexities
   - [ ] Set up GitLab on Docker to continue the project
