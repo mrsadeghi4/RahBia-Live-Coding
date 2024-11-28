@@ -25,7 +25,8 @@ Welcome to the fourth live coding session! In this session, we dived into the wo
 Managing VMs manually can be time-consuming and error-prone. By using Ansible, you can automate the entire process, save time, and ensure consistency across deployments. This session equips you with the skills to handle vCenter resources like a pro!
 
 ## Reference:
-  - [Reference project](https://github.com/bodsch/ansible-collection-docker)
+  - [Reference VMware module](https://docs.ansible.com/ansible/latest/collections/community/vmware/index.html)
+  - [Reference module](https://docs.ansible.com/ansible/latest/collections/community/vmware/vmware_guest_module.html)
 
 ## 🔗 Links
 [![Site](https://img.shields.io/badge/Dockerme.ir-0A66C2?style=for-the-badge&logo=docker&logoColor=white)](https://dockerme.ir/)
