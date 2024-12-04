@@ -1,0 +1,6 @@
+- name: create VMs
+  hosts: all
+  become: true
+  gather_facts: false
+  roles:
+    - { role: ../roles/create_vms, tags: 'create_vms' }

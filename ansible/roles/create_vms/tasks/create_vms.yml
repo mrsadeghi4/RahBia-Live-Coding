@@ -1,4 +1,11 @@
 ---
+- name: Install multi python packages
+  ansible.builtin.pip:
+    name:
+      - pyvmomi
+  delegate_to: localhost
+  run_once: true
+
 - name: Create a VM folder on given datacenter
   community.vmware.vcenter_folder:
     hostname: "{{ vcenter_hostname }}"
@@ -38,6 +45,12 @@
       ip: "{{ IP_ADDRESS }}"
       netmask: "{{ SUBNET_MASK }}"
       gateway: "{{ GATEWAY_ADDRESS }}"
+    customization:
+      dns_servers:
+        - 8.8.8.8
+        - 4.2.2.4
+      hostname: "{{ inventory_hostname }}"
+      timezone: Asia/Tehran
     wait_for_ip_address: true
   delegate_to: localhost
 

@@ -2,7 +2,6 @@
 # defaults file for vms_management
 DC_NAME: DockerMe-Labs
 ESXI_NAME: mesx.canme.ir
-VM_FOLDER: RahBia-Live-Coding
 VM_TEMPLATE: RahBia-Template
 NETWORK_NAME: local
 SUBNET_MASK: 255.255.255.0
