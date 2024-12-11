@@ -1,4 +1,6 @@
 ---
+os_new_root_password: qaz123QAZ!@#
+
 os_env_user_paths: [/usr/local/sbin, /usr/local/bin, /usr/sbin, /usr/bin, /sbin, /bin]
 os_env_extra_user_paths: []
 os_auth_pw_max_age: 60
@@ -55,8 +57,21 @@ os_security_init_prompt: true
 # Require root password for single user mode. (rhel, centos)
 os_security_init_single: false
 
+# Iptables configuration
+os_iptables_enabled: true
+iptables:
+  nic_access:
+    - web_net
+    - app_net
+  tcp_port:
+    - 80
+    - 443
+  #udp_port:
+  ip_access:
+    - 192.168.200.0/24
+
 # Apply ufw defaults
-ufw_manage_defaults: true
+ufw_manage_defaults: false
 
 # Empty variable disables IPT_SYSCTL in /etc/default/ufw
 # By default in Ubuntu it is set to: /etc/ufw/sysctl.conf
@@ -74,7 +89,7 @@ ufw_ipt_modules: nf_conntrack_ftp nf_nat_ftp nf_conntrack_netbios_ns
 
 # Set to true to apply rules to support IPv6 (no means only IPv6 on loopback
 # accepted).
-ufw_enable_ipv6: true
+ufw_enable_ipv6: false
 
 sysctl_config:
   # These settings eliminate an entire class of security vulnerabilities:

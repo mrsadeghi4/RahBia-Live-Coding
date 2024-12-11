@@ -1,0 +1,7 @@
+---
+project_dir: /opt/services
+service_dir: "{{ project_dir }}/minio"
+
+MINIO_IMAGE_TAG: RELEASE.2024-11-07T00-52-20Z
+minio_root_user: sdfsfwefew
+minio_root_pass: ewseceslooklsecesawe

@@ -40,6 +40,7 @@ Below is a list of the sessions we've already completed in the RahBia Live Codin
   - **[Session 03:](2024-Sessions/Session-03-20-November.md)** Install and config Docker service
   - **[Session 04:](2024-Sessions/Session-04-27-November.md)** Automating VM Creation on vCenter with Ansible
   - **[Session 05:](2024-Sessions/Session-05-04-December.md)** Automating VM Creation and delete on vCenter with Ansible
+  - **[Session 06:](2024-Sessions/Session-05-11-December.md)** Create iptables rules with ansible and create minio services
 
 Feel free to check out the session's detailed steps and resources in the respective session folders. We’ll keep updating this list as we progress through more advanced topics in DevOps.
 
@@ -64,9 +65,9 @@ Below is a list of the tasks and topics we’ll be covering in this series. This
     - [x] Perform system hardening using the Lynis tool
   - [x] Use an Ansible project to modify and harden Linux servers to achieve a security score above 80
   - [x] Use an Ansible project to modify, install, and configure Docker on servers
-  - [ ] Use an Ansible project to create and change iptables
+  - [x] Use an Ansible project to create and change iptables
   - [x] Use an Ansible project to create and change ssh config
-  - [ ] Use an Ansible project to create and change password
+  - [x] Use an Ansible project to create and change password
   - [ ] Mitogen for Ansible
   - [x] Create a VM template on VMware and write an Ansible playbook to automate VM creation
   - [ ] Deploy the project as a service on a server with a database and cache, demonstrating the challenges and complexities

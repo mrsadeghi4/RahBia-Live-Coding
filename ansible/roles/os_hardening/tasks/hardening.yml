@@ -28,6 +28,11 @@
   with_dict: "{{ os_vars }}"
   tags: always
 
+- name: Import tasks for iptables
+  ansible.builtin.import_tasks: iptables.yml
+  tags: iptables
+  when: os_iptables_enabled | bool
+
 - name: Import tasks for auditd
   ansible.builtin.import_tasks: auditd.yml
   tags: auditd

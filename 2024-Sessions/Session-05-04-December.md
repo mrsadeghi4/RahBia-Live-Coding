@@ -8,7 +8,7 @@
 ### Video Link:
 [![YouTube](http://i.ytimg.com/vi/vr2opLa2AvM/hqdefault.jpg)](https://www.youtube.com/live/vr2opLa2AvM)
 
-## Session 04:
+## Session 05:
   - **Setup VMs on Vcenter with ansible**
   - **Modify ssh role and add ssh_banner file**
 
