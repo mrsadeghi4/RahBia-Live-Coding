@@ -3,4 +3,4 @@
   become: true
   gather_facts: false
   roles:
-    - { role: ../roles/create_vms, tags: 'create_vms' }
+    - { role: create_vms, tags: 'create_vms' }

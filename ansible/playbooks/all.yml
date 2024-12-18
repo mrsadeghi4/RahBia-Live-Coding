@@ -1,0 +1,10 @@
+- name: install and configuration all services on rahbia-services
+  hosts: rahbia-services
+  become: true
+  gather_facts: true
+  roles:
+    - ssh_hardening
+    - os_hardening
+    - docker_installation
+    - traefik_setup
+    - minio_setup

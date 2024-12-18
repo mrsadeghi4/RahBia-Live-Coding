@@ -1,6 +1,6 @@
-- name: install and configuration minio service
+- name: install and configuration traefik service
   hosts: rahbia-services
   become: true
   gather_facts: true
   roles:
-    - minio_setup
+    - traefik_setup

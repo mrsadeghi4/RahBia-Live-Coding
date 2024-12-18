@@ -3,5 +3,5 @@
   become: true
   gather_facts: true
   roles:
-    - ../roles/ssh_hardening
-    - ../roles/os_hardening
+    - ssh_hardening
+    - os_hardening
