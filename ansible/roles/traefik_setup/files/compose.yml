@@ -42,10 +42,12 @@ services:
       - web_net
     labels:
       - "traefik.enable=true"
+      - "traefik.http.middlewares.web-auth.basicauth.users=${web_auth_user}:${web_auth_pass}"
       - "traefik.http.routers.http-khodesh.rule=Host(`${traefik_domain}`)"
       - "traefik.http.routers.http-khodesh.entrypoints=web"
       - "traefik.http.routers.khodesh.rule=Host(`${traefik_domain}`)"
       - "traefik.http.routers.khodesh.entrypoints=web-secure"
+      - "traefik.http.routers.khodesh.middlewares=web-auth@docker"
       - "traefik.http.routers.khodesh.tls=true"
       - "traefik.http.routers.khodesh.tls.certresolver=myresolver"
       - "traefik.http.services.khodesh.loadBalancer.server.port=8080"
