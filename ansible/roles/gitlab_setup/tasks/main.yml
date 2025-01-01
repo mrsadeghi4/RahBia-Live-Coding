@@ -60,3 +60,17 @@
     project_src: "{{ service_dir }}"
   tags:
     - deploy
+
+- name: Creates a cron file under /etc/cron.d for gitlab backup
+  cron:
+    name: gitlab-backup
+    weekday: "*"
+    month: "*"
+    day: "*"
+    hour: "*"
+    minute: "*"
+    user: root
+    job: "/usr/bin/docker exec -it gitlab gitlab-backup create CRON=1"
+    cron_file: gitlab_backup_create
+  tags:
+    - cron

@@ -40,8 +40,10 @@ Below is a list of the sessions we've already completed in the RahBia Live Codin
   - **[Session 03:](2024-Sessions/Session-03-20-November.md)** Install and config Docker service
   - **[Session 04:](2024-Sessions/Session-04-27-November.md)** Automating VM Creation on vCenter with Ansible
   - **[Session 05:](2024-Sessions/Session-05-04-December.md)** Automating VM Creation and delete on vCenter with Ansible
-  - **[Session 06:](2024-Sessions/Session-05-11-December.md)** Create iptables rules with ansible and create minio services
-  - **[Session 07:](2024-Sessions/Session-05-18-December.md)** Setup Traefik and Minio services with docker and ansible
+  - **[Session 06:](2024-Sessions/Session-06-11-December.md)** Create iptables rules with ansible and create minio services
+  - **[Session 07:](2024-Sessions/Session-07-18-December.md)** Setup Traefik and Minio services with docker and ansible
+  - **[Session 08:](2024-Sessions/Session-08-25-December.md)** Setup Traefik and gitlab services with docker and ansible
+  - **[Session 09:](2025-Sessions/Session-09-01-January.md)** Setup and config gitlab services with docker and ansible
 
 Feel free to check out the session's detailed steps and resources in the respective session folders. We’ll keep updating this list as we progress through more advanced topics in DevOps.
 
@@ -69,10 +71,10 @@ Below is a list of the tasks and topics we’ll be covering in this series. This
   - [x] Use an Ansible project to create and change iptables
   - [x] Use an Ansible project to create and change ssh config
   - [x] Use an Ansible project to create and change password
-  - [ ] Mitogen for Ansible
+  - [x] Mitogen for Ansible
   - [x] Create a VM template on VMware and write an Ansible playbook to automate VM creation
   - [ ] Deploy the project as a service on a server with a database and cache, demonstrating the challenges and complexities
-  - [ ] Set up GitLab on Docker to continue the project
+  - [x] Set up GitLab on Docker to continue the project
   - [ ] Set up Nexus on Docker to continue the project
   - [x] Set up Traefik on Docker to continue the project
   - [x] Set up MinIo on Docker to continue the project

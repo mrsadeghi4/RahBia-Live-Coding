@@ -46,6 +46,18 @@ services:
         nginx['listen_https'] = false
         nginx['proxy_protocol'] = false
 
+        # GitLab email server settings
+        gitlab_rails['smtp_enable'] = true
+        gitlab_rails['smtp_address'] = "smtp.gmail.com"
+        gitlab_rails['smtp_port'] = 587
+        gitlab_rails['smtp_user_name'] = "${smtp_username}"
+        gitlab_rails['smtp_password'] = "${smtp_password}"
+        gitlab_rails['smtp_domain'] = "smtp.gmail.com"
+        gitlab_rails['smtp_authentication'] = "login"
+        gitlab_rails['smtp_enable_starttls_auto'] = true
+        gitlab_rails['smtp_tls'] = false
+        gitlab_rails['smtp_openssl_verify_mode'] = 'peer'
+
         # Gitlab ban authentication failed
         gitlab_rails['rack_attack_git_basic_auth'] = {
           'enabled' => true,
@@ -63,16 +75,29 @@ services:
         gitlab_rails['env'] = {
             "SKIP" => "registry"
         }
-        # gitlab_rails['backup_upload_connection'] = {
-        #   'provider' => 'AWS',
-        #   'region' => 'eu-west-1',
-        #    'endpoint' => 'https://min.rahbia.mecan.ir',
-        #   'aws_access_key_id' => 'AKIAKIAKI',
-        #   'aws_secret_access_key' => 'secret123',
-        #   'use_iam_profile' => false
-        # }
-        # gitlab_rails['backup_upload_remote_directory'] = 'gitlab-backup'
-        # gitlab_rails['backup_multipart_chunk_size'] = 104857600
+        gitlab_rails['backup_upload_connection'] = {
+          'provider' => 'AWS',
+          'region' => 'eu-west-1',
+          'aws_access_key_id' => '${gitlab_s3_username}',
+          'aws_secret_access_key' => '${gitlab_s3_password}',
+          'endpoint' => '${gitlab_s3_endpoint}',
+          'path_style' => true
+        }
+        gitlab_rails['backup_upload_remote_directory'] = '${gitlab_s3_bucket}'
+        gitlab_rails['backup_multipart_chunk_size'] = 104857600
+
+        # Settings used by GitLab registry
+        registry_external_url 'https://${registry_domain}'
+        registry_nginx['enable'] = true
+        registry_nginx['listen_port'] = 5001
+        registry_nginx['listen_https'] = false
+        registry_nginx['proxy_set_headers'] = {
+          "Host" => "$$http_host",
+          "X-Real-IP" => "$$remote_addr",
+          "X-Forwarded-For" => "$$proxy_add_x_forwarded_for",
+          "X-Forwarded-Proto" => "https",
+          "X-Forwarded-Ssl" => "on"
+        }
 
         # Gitlab disable unused services
         node_exporter['enable'] = false
@@ -87,6 +112,8 @@ services:
     networks:
       - web_net
       - app_net
+    ports:
+      - "22:22"
     labels:
       - "traefik.enable=true"
       - "traefik.http.routers.http-git.rule=Host(`${gitlab_domain}`)"
