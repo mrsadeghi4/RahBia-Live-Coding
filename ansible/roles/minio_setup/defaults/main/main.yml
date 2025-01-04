@@ -1,4 +1,6 @@
 ---
+project_dir: /opt/
+
 service_dir: "{{ project_dir }}/minio"
 
 minio_image_tag: RELEASE.2024-11-07T00-52-20Z
